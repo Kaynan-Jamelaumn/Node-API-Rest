@@ -10,7 +10,11 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
-      surname: {
+      name: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      lastname: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -19,7 +23,7 @@ module.exports = {
         allowNull: false,
       },
       birthday: {
-        type: Sequelize.DATE,
+        type: Sequelize.DATEONLY,
         allowNull: false,
       },
       weight: {
