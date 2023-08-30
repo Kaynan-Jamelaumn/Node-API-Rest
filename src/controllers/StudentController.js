@@ -2,9 +2,9 @@ import Student from '../models/Student';
 
 class StudentController {
   async index(req, res) {
-    const studemts = await Student.findAll();
+    const students = await Student.findAll();
     res.json({
-      blabla: studemts,
+      students: students,
     });
   }
 
@@ -94,15 +94,6 @@ class StudentController {
       })
     }
   }
-
-
-
-
-
-
-
-
-
 
 }
 
